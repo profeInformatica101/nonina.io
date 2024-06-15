@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tiempo Vivido</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+      <h1>nonina.io</h1>
+        <div class="time-display">
+            <h1 id="current-time"></h1>
+        </div>
+        <form id="birthdate-form" class="form-inline justify-content-center">
+            <div class="form-group mb-2">
+                <label for="birthdate" class="sr-only">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="birthdate" value="1999-12-31" required>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Calcular</button>
+        </form>
+        <div id="result" class="result-display text-center"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
